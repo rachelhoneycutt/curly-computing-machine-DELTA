@@ -8,15 +8,20 @@ $(document).ready(function(){
     $('.container').hide();
     $(".nameFacts").show()
     $("#spiritAnimal").show();
-    var nameArray = userName.split('')
-    let length = nameArray.length;
-    var reversedName = "";
-    for (let i = length-1; i >= 0; i--) {
-      reversedName += nameArray[i];
-    }
+    var reversedName = reverseName(userName);
     document.getElementById("name").innerHTML = reversedName;
     console.log(reversedName);
   });
 
 
 });
+
+function reverseName(name) {
+  var nameArray = name.split('')
+  let length = nameArray.length;
+  var reversedName = "";
+  for (let i = length-1; i >= 0; i--) {
+    reversedName += nameArray[i];
+  }
+  return reversedName;
+}
