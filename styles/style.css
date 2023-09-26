@@ -4,10 +4,11 @@ body {
 }
 
 img {
-    width: 40%;
+    width: 30%;
     height: auto;
     border-radius: 40px;
     display: none;
+    margin-left: 35%;
 }
 
 .nameFacts {
@@ -16,6 +17,8 @@ img {
     font-size: 20px;
     text-align: center;
     display: none;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #name {
@@ -24,4 +27,8 @@ img {
 
 .links {
     text-align: right;
+}
+
+.container {
+    text-align: center;
 }
