@@ -1,8 +1,5 @@
 $(document).ready(function(){
   
-  $("#spiritAnimal").hide();
-  $('.nameFacts').hide();  
-
   $('#submitName').click(function() {
     let userName = $('#userName').val()
     $('.container').hide();
@@ -12,7 +9,6 @@ $(document).ready(function(){
     document.getElementById("name").innerHTML = reversedName;
     console.log(reversedName);
   });
-
 
 });
 
